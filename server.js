@@ -14,3 +14,14 @@ const app = express();
 app.use(express.static(path.join(__dirname,'client/build')));
 
 
+
+
+
+
+//Creating the port variable and listener ()
+
+const thePort = process.env.PORT || 5050;
+app.listen(thePort);
+
+
+
