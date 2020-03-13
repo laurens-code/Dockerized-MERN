@@ -8,3 +8,9 @@ const path = require('path');
 const app = express();
 
 //serving up the static files (from React)
+    //Once the React file is made, you will create a path that will 
+        //render the client build folder
+            //utilizing express
+app.use(express.static(path.join(__dirname,'client/build')));
+
+
